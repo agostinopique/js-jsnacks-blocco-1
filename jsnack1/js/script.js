@@ -11,20 +11,20 @@ let userNum;
 const submit = document.getElementById('submit');
 
 let firstNum;
-let firstNum;
+let secondNum;
     
 firstNum = parseInt(prompt('Inserisci un numero!'));
 
 secondNum = parseInt(prompt('Inserisci un numero!'));
 
 
-if(firstNum > firstNum){
+if(firstNum > secondNum){
 
     submit.innerHTML = `Il numero maggiore é ${firstNum}`;
 
-} else if (firstNum < firstNum){
+} else if (firstNum < secondNum){
 
-    submit.innerHTML = `Il numero maggiore é ${firstNum}`;
+    submit.innerHTML = `Il numero maggiore é ${secondNum}`;
 
 } else {
 
