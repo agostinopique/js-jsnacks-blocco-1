@@ -14,10 +14,37 @@
 
 */
 
-const userNum = [];
-
 const inputLimit = 5
 
 let userInput;
 
-for(i = 0; i < inputLimit; )
+const submit = document.querySelector('#submit');
+
+let arrSum = 0;
+
+for(let i = 0; i < inputLimit; i++) {
+
+    userInput = parseInt(prompt('Inserisci un numero!'));
+    arrSum += userInput;
+    console.log('somma con for', arrSum);
+}
+
+
+submit.innerHTML = `La somma dei tuoi con for numeri é ${arrSum}`;
+*/
+
+// ALTERNATIVA CON WHILE
+/*
+let i = 0;
+
+while(i < inputLimit) {
+
+    userInput = parseInt(prompt('Inserisci un numero!'));
+    arrSum += userInput;
+    console.log('somma con while', arrSum);
+    i++;
+
+}
+
+submit.innerHTML = `La somma dei tuoi numeri con while é ${arrSum}`;
+*/
