@@ -8,7 +8,8 @@
     1. Chiedo la prima parola
     2. Chiedo la seconda parola
     3. Paragono le due parole
-    4. Stampo la parola piú lunga.
+    4. Stampo la parola piú corta.
+    5. Stampo la parola piú lunga.
 
 */
 
@@ -29,12 +30,17 @@ for(i = 0; i < wordLimit; i++){
 
 }
 
-if(wordArr[0] > wordArr[1]){
+if(wordArr[0].length > wordArr[1].length){
 
-    submit.innerHTML = `La parola più lunga é ${wordArr[0]}`;
+    submit.innerHTML = `La parola più corta é '${wordArr[1]}' e la parola più lunga é '${wordArr[0]}'`;
+    
+} else if(wordArr[0].length < wordArr[1].length) {
+    
+    submit.innerHTML = `La parola più corta é '${wordArr[0]}' e la parola più lunga é '${wordArr[1]}'`;
 
 } else {
 
-    submit.innerHTML = `La parola più lunga é ${wordArr[1]}`;
+    submit.innerHTML = `Le parole hanno la stessa lunghezza!`;
 
 }
+
