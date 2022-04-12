@@ -13,30 +13,21 @@
 
 */
 
-
-const wordArr = [];
-
-const wordLimit = 2;
-
-let userWord;
+let firstWord;
+let secondWord;
 
 const submit = document.getElementById('submit');
-
-for(i = 0; i < wordLimit; i++){
     
-    userWord = prompt('Inserisci una parola!');
-    wordArr.push(userWord);
-    console.log(wordArr);
+firstWord = prompt('Inserisci la prima una parola!');
+secondWord = prompt('Inserisci la seconda una parola!');
 
-}
+if(firstWord.length > secondWord.length){
 
-if(wordArr[0].length > wordArr[1].length){
-
-    submit.innerHTML = `La parola più corta é '${wordArr[1]}' e la parola più lunga é '${wordArr[0]}'`;
+    submit.innerHTML = `La parola più corta é '${secondWord}' e la parola più lunga é '${firstWord}'`;
     
-} else if(wordArr[0].length < wordArr[1].length) {
+} else if(firstWord.length < secondWord.length) {
     
-    submit.innerHTML = `La parola più corta é '${wordArr[0]}' e la parola più lunga é '${wordArr[1]}'`;
+    submit.innerHTML = `La parola più corta é '${firstWord}' e la parola più lunga é '${secondWord}'`;
 
 } else {
 

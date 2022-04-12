@@ -6,29 +6,25 @@
 
 */
 
-const userArr = [];
-
-const roundsNum = 2;
-
-let userNum ;
+let userNum;
 
 const submit = document.getElementById('submit');
 
-for(i = 0; i < roundsNum; i++){
+let firstNum;
+let firstNum;
     
-    userNum = parseInt(prompt('Inserisci un numero!'));
-    userArr.push(userNum);
-    console.log(userArr);
+firstNum = parseInt(prompt('Inserisci un numero!'));
 
-}
+secondNum = parseInt(prompt('Inserisci un numero!'));
 
-if(userArr[0] > userArr[1]){
 
-    submit.innerHTML = `Il numero maggiore é ${userArr[0]}`;
+if(firstNum > firstNum){
 
-} else if (userArr[0] < userArr[1]){
+    submit.innerHTML = `Il numero maggiore é ${firstNum}`;
 
-    submit.innerHTML = `Il numero maggiore é ${userArr[1]}`;
+} else if (firstNum < firstNum){
+
+    submit.innerHTML = `Il numero maggiore é ${firstNum}`;
 
 } else {
 
