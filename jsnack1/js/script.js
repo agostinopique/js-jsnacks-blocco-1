@@ -6,11 +6,9 @@
 
 */
 
-
-
 const userArr = [];
 
-let roundsNum = 2;
+const roundsNum = 2;
 
 let userNum ;
 
@@ -18,14 +16,19 @@ const submit = document.getElementById('submit');
 
 for(i = 0; i < roundsNum; i++){
     
-    userNum = prompt('Inserisci un numero!');
+    userNum = parseInt(prompt('Inserisci un numero!'));
     userArr.push(userNum);
     console.log(userArr);
 
 }
 
 if(userArr[0] > userArr[1]){
+
     submit.innerHTML = `Il numero maggiore é ${userArr[0]}`;
-} else{
+
+} else {
+
     submit.innerHTML = `Il numero maggiore é ${userArr[1]}`;
+
 }
+
