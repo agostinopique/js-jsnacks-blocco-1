@@ -26,9 +26,13 @@ if(userArr[0] > userArr[1]){
 
     submit.innerHTML = `Il numero maggiore é ${userArr[0]}`;
 
-} else {
+} else if (userArr[0] < userArr[1]){
 
     submit.innerHTML = `Il numero maggiore é ${userArr[1]}`;
+
+} else {
+
+    submit.innerHTML = `I numeri sono uguali!`;
 
 }
 
