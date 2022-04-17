@@ -6,7 +6,7 @@
 /*
 
     1. Chiedo all'utente quati numeri vuole stampare.
-    2. Calcolo il cubo della quantita dinumeri indicati dall'utente.
+    2. Calcolo il cubo della quantita di numeri indicati dall'utente.
     3. Stampo i risultati a schermo.
 
 */
