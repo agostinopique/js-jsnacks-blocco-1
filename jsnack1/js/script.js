@@ -6,16 +6,22 @@
 
 */
 
-let userNum;
-
 const submit = document.getElementById('submit');
 
 let firstNum;
-let secondNum;
-    
-firstNum = parseInt(prompt('Inserisci un numero!'));
+let secondNum = parseInt(prompt('Inserisci un numero!'));
 
-secondNum = parseInt(prompt('Inserisci un numero!'));
+// CONTROLLO
+while (isNaN(firstNum)){
+    firstNum = parseInt(prompt('Inserisci un numero!'));
+    if (isNaN(firstNum)) alert('Inserisci un numero!')
+}
+
+while (isNaN(secondNum)){
+    secondNum = parseInt(prompt('Inserisci un altro numero!'));
+    if (isNaN(secondNum)) alert('Inserisci un numero!')
+}
+// /CONTROLLO
 
 
 if(firstNum > secondNum){
@@ -31,4 +37,3 @@ if(firstNum > secondNum){
     submit.innerHTML = `I numeri sono uguali!`;
 
 }
-
