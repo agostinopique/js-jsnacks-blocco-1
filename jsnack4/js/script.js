@@ -15,25 +15,36 @@ const submit = document.querySelector('#submit');
 
 const invitatiDiGatsby = ['manuel', 'francesco', 'sebastiano', 'andrea', 'riccardo']
 
-let userName = prompt('Come ti chiami?').toLowerCase();
+const userName = prompt('Come ti chiami?').toLowerCase()
 
-let nameVerification = false;
 
-for(let i = 0; i < invitatiDiGatsby.length; i++) {
+if(isNaN (userName)) {
 
-    if(userName === invitatiDiGatsby[i]){
-        nameVerification = true;
-    } 
 
-    console.log(nameVerification);
-}
+    let nameVerification = false;
+    
+    for(let i = 0; i < invitatiDiGatsby.length; i++) {
+        if(userName === invitatiDiGatsby[i]){
+            nameVerification = true;
+        } 
+    
+        console.log(nameVerification);
+    }
 
-if(nameVerification) {
+    if(nameVerification) {
 
-    submit.innerHTML = 'Benvenuto alla festa!';
+        submit.innerHTML = 'Benvenuto alla festa!';
+    
+    } else {
+    
+        submit.innerHTML = 'Mi spiace ma non sei nella lista!';
+    
+    }
 
 } else {
-
-    submit.innerHTML = 'Mi spiace ma non sei nella lista!';
+    
+    alert('Inserisci un nome!');
 
 }
+
+
