@@ -9,8 +9,7 @@
 const submit = document.getElementById('submit');
 
 let firstNum;
-let secondNum = parseInt(prompt('Inserisci un numero!'));
-
+let secondNum;
 // CONTROLLO
 while (isNaN(firstNum)){
     firstNum = parseInt(prompt('Inserisci un numero!'));
