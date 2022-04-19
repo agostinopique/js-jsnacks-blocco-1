@@ -23,13 +23,23 @@ let i = 0;
 let numbRequest;
 
 do {
+    
+    numbRequest = parseInt(prompt(`Inserisci un numero ${numbNeeded - i} volte!`));
+    
+    if(!(isNaN (numbRequest))){
+        
+        if(numbRequest % 2) {
+            arrNumber.push(numbRequest);
+        }  
+        i++;
+        console.log('numero inserito', numbRequest);
 
-    numbRequest = parseInt(prompt('Inserisci un numero'));
-    console.log('numero inserito', numbRequest);
+    } else {
 
-    if(numbRequest % 2) {
-        arrNumber.push(numbRequest);
-    } 
-    i++;
+        alert('Inserisci un numero!');
+
+    }
+    
+   
 
 } while (i < numbNeeded); 
