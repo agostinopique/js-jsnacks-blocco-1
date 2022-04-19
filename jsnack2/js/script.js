@@ -13,13 +13,56 @@
 
 */
 
-let firstWord;
-let secondWord;
+// let firstWord;
+// let secondWord;
 
 const submit = document.getElementById('submit');
+
+// CONTROLLO
+let arrFristWord = [];
+let arrSecondWord = [];
+
+while(arrFristWord.length > 1 || arrFristWord.length == 0){
+
+    const firstWord = prompt('Inserisci la prima una parola!').trim(); 
+    //.trim(rimuove gli spazi all'inizio e alla fine della stringa);
     
-firstWord = prompt('Inserisci la prima una parola!');
-secondWord = prompt('Inserisci la seconda una parola!');
+    // eseguo la divisione nel caso in cui vengono inserite più parole nel prompt 
+    if(firstWord.length != 0) {
+        arrFristWord = firstWord.split(' ');
+    }
+
+    console.log(arrFristWord);
+
+    // Se l'array che conterrà le parole splittate é più lungo di 1 allora mostra l'alert
+    if(arrFristWord.length > 1){
+        alert('Inserisci solo una parola');
+    }
+
+}
+
+while(arrSecondWord.length > 1 || arrSecondWord.length == 0){
+
+    const secondWord = prompt('Inserisci la seconda una parola!').trim();
+
+    if(secondWord.length != 0) {
+        arrSecondWord = secondWord.split(' ');
+    }
+
+
+    console.log(arrSecondWord);
+
+    if(arrSecondWord.length > 1){
+        alert('Inserisci solo una parola');
+    }
+
+}
+
+// /CONTROLLO
+
+
+
+
 
 if(firstWord.length > secondWord.length){
 
